@@ -1,0 +1,277 @@
+*{
+    margin:0;
+    padding:0;
+}
+.page-header {
+    background-image: url('bg_img.jpg');
+    margin-top:-15px !important;
+    padding:50px;
+    border:none;
+}
+.page-header .container{
+    padding:20px;
+}
+.page-header .container .row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.page-header .container .row .sm-box{
+    padding:25px;
+    margin:0px;
+    border:2px solid #B026FF;
+    border-radius:50%;
+    font-style:normal;
+    font-weight: 600;
+    width: 345px;
+    box-sizing: border-box;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.page-header .container .row .sm-box:hover{
+    border-color: lightgreen;
+}
+.page-header .container .row .sm-box h1{
+    font-size:20px;
+    margin:20px 10px;
+}
+#payment-btn, #buy-btn, #contact-btn{
+
+    border:2px solid #fff;
+    font-size:22px;
+    align-items: bottom;
+    border-radius:40px;
+    background:transparent;
+    cursor:pointer;
+    padding:8px;
+    font-weight: 400;
+}
+#payment-btn{
+    margin:77px 0 10px 0px !important;
+}
+#buy-btn{
+    margin:126px 0 10px 0px !important;
+}
+#contact-btn{
+    margin:60px 0 10px 0px !important;
+}
+#payment-btn:hover, #buy-btn:hover, #contact-btn:hover{
+    background:rgb(46, 10, 247);
+
+}
+.modal{
+    color: #555;
+    font-size:18px;
+}
+.btn, button{
+    font-size: 18px;
+}
+input[type=text], input[type=email], input[type=textarea], input[type=number]{
+    padding:20px;
+    font-size:18px;
+}
+input:focus{
+    font-size:18px;
+    padding:20px;
+}
+#sender_message_text{
+    padding:15px;
+    font-size:18px;
+}
+.close {
+    font-size:30px;
+    padding:20px;
+}
+.currency{
+    margin:0;
+    padding:10px 50px;
+}
+.currency .box{
+    display:flex;
+    justify-content:center;
+    margin:5px;
+    cursor:pointer;
+}
+.currency .box p{
+    margin:0px 100px;
+}
+.currency .box img{
+    height: 80px;
+    width: 200px;
+    margin: 5px;
+}
+
+#success_msz{
+    color:green;
+    display: none;
+}
+
+
+.glow-on-hover {
+    width: 170px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 40px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 40px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:  #B026FF;
+    left: 0;
+    top: 0;
+    border-radius: 40px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+@media (max-width:1200px) {
+    .page-header .container{
+        padding:15px;
+    }
+    .page-header .container .row{
+        margin:22px;
+        display:flex;
+        justify-content:space-between;
+    }
+    .page-header .container .row .sm-box{
+        padding:20px;
+        margin:7px;
+        border:2px solid #B026FF;
+        border-radius:50%;
+        font-style:normal;
+        font-weight: 500;
+        width: 220px;
+        box-sizing: border-box;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+    .page-header .container .row .sm-box:hover{
+        border-color: lightgreen;
+    }
+    .page-header .container .row .sm-box h1{
+        font-size:17px;
+        margin:17px 8px;
+    }
+    #payment-btn, #buy-btn, #contact-btn{
+    
+        border:2px solid #fff;
+        font-size:19px;
+        align-items: bottom;
+        border-radius:32px;
+        background:transparent;
+        cursor:pointer;
+        padding:7px;
+        font-weight: 400;
+    }
+    #payment-btn{
+        margin:22px 0 10px 0px !important;
+    }
+    #buy-btn{
+        margin:105px 0 10px 0px !important;
+    }
+    #contact-btn{
+        margin:45px 0 10px 0px !important;
+    }
+    #payment-btn:hover, #buy-btn:hover, #contact-btn:hover{
+        background:rgb(46, 10, 247);
+    
+    }
+    
+}
+@media (max-width:990px) {
+    .page-header .container{
+        padding:0px;
+    }
+    .page-header .container .row{
+        margin:20px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    .page-header .container .row .sm-box{
+        padding:20px;
+        margin:7px;
+        border:2px solid #B026FF;
+        border-radius:50%;
+        font-style:normal;
+        font-weight: 500;
+        width: 250px !important;
+        box-sizing: border-box;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+    .page-header .container .row .sm-box:hover{
+        border-color: lightgreen;
+    }
+    .page-header .container .row .sm-box h1{
+        font-size:17px;
+        margin:5px 8px;
+    }
+    #payment-btn, #buy-btn, #contact-btn{
+    
+        border:2px solid #fff;
+        font-size:19px;
+        align-items: bottom;
+        border-radius:32px;
+        background:transparent;
+        cursor:pointer;
+        padding:7px;
+        font-weight: 400;
+    }
+    #payment-btn{
+        margin:10px 0 25px 0px !important;
+    }
+    #buy-btn{
+        margin:80px 0 25px 0px !important;
+    }
+    #contact-btn{
+        margin:15px 0 25px 0px !important;
+    }
+    #payment-btn:hover, #buy-btn:hover, #contact-btn:hover{
+        background:rgb(46, 10, 247);
+    
+    }
+    
+}
+
